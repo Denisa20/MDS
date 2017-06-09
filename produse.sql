@@ -77,6 +77,24 @@ INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, 
 (13,4,'Tom Sawyer & Huckleberry Finn','Mark Twain',9.99,'Tom Sawyer, a shrewd and adventurous boy, is as much at home in the respectable world of his Aunt Polly as in the self-reliant and parentless world of his friend Huck Finn. The two enjoy a series of adventures, accidentally witnessing a murder, establishing the innocence of the man wrongly accused, as well as being hunted by Injun Joe, the true murderer, eventually escaping and finding the treasure that Joe had buried. Huckleberry Finn recounts the further adventures of Huck, who runs away from a drunken and brutal father, and meets up with the escaped slave Jim.',NULL,7);
 
 
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(14,4,'The Waves','Virginia Woolf',15.99,' Widely regarded as one of her greatest and most original works, it conveys the rhythms of life in synchrony with the cycle of nature and the passage of time. Six children - Bernard, Susan, Rhoda, Neville, Jinny and Louis - meet in a garden close to the sea, their voices sounding over the constant echo of the waves that roll back and forth from the shore. The subsequent continuity of these six main characters, as they develop from childhood to maturity and follow different passions and ambitions, is interspersed with interludes from the timeless and unifying chorus of nature. In pure stream-of-consciousness style, Woolf presents a cross-section of multiple yet parallel lives, each marked by the disintegrating force of a mutual tragedy. ',NULL,4);
+
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(15,5,'Dictionar roman-englez','Irina Panovf',33.65,' ',NULL,10);
+
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(16,5,'Dictionar roman-german','Ioan Lazarescu',20.53,' ' ,NULL,15);
+
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(17,6,'Povestea fetitei pierdute', 'Elena Ferrante',40.5,' Odata cu acest ultim volum remarcabil al Tetralogiei Napolitane, Elena Ferrante transforma povestea despre Lila si Elena intr-o epopee extraordinara care se intinde de-a lungul a sase decenii si se constituie intr-un portret al unui cartier, al unui oras in tranzitie si al unei tari ce-si croieste drum cu greu prin prima jumatate a secolului XX.',NULL,4);
+
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(18,6,'Povestea noului nume','Elena Ferrante',40.50,'Al doilea volum din Tetralogia Napolitana',NULL,6);
+
+
+INSERT INTO `produse` (`id`, `idc`, `nume`,`autor`, `pret`, `detalii`, `image`, `stoc`) VALUES
+(19,6,'Cei care pleaca si cei ce raman','Elena Ferrante',35.50,'Al treilea volum din Tetralogia Napolitana',NULL,6);
 
 
 

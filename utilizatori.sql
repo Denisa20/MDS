@@ -32,7 +32,8 @@ CREATE TABLE IF NOT EXISTS `utilizator` (
 
 
 INSERT INTO `utilizator` (`id_utilizator`, `username`, `password`, `nume`, `prenume`, `cnp`, `telefon`, `mail`, `judet`, `oras`, `strada`, `numar`, `cod_postal`, `statut`) VALUES
-(1, 'admin', 'parolaadmin', 'Administrator', 'Site', '1890282358433', '0777777777', 'admin@yahoo.com', 'Bucuresti', 'Bucuresti', 'aaa', '290', '060029', 0);
+(1, 'admin', 'parolaadmin', 'Administrator', 'Site', '1890282358433', '0777777777', 'admin@yahoo.com', 'Bucuresti', 'Bucuresti', 'aaa', '290', '060029', 0),
+(2, 'ana', 'parola', 'Ana', 'Popescu', '2890282358433', '0777777771', 'ana@yahoo.com', 'Bucuresti', 'Bucuresti', 'aaa', '290', '060029', 0);
 
 
 

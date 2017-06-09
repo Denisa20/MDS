@@ -20,11 +20,9 @@ CREATE TABLE IF NOT EXISTS `produs_comanda` (
 -- DATE TABEL PRODUS COMANDA
 
 INSERT INTO `produs_comanda` (`id_comanda`, `id_produs`, `nr_produse`) VALUES
-(1, 1, 3),
-(1, 10, 2),
+(1, 1, 1),
 (2, 5, 1),
-(2, 2, 2),
-(3, 5, 1);
+(2, 2, 1);
 
 
 

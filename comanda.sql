@@ -13,7 +13,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `comanda` (
   `id_comanda` int(11) NOT NULL AUTO_INCREMENT,
   `id_utilizator` int(11) NOT NULL,
-  `valoare` int(11) NOT NULL,
+  `valoare` decimal(6,2) NOT NULL,
   `data` datetime NOT NULL,
   `onorare` binary(1) NOT NULL,
   PRIMARY KEY (`id_comanda`)
@@ -24,9 +24,8 @@ CREATE TABLE IF NOT EXISTS `comanda` (
 -- DATE TABEL COMANDA
 
 INSERT INTO `comanda` (`id_comanda`, `id_utilizator`, `valoare`, `data`, `onorare`) VALUES
-(1, 15, 6334, '2017-01-10 01:39:03', '1'),
-(2, 15, 11479, '2017-03-21 01:52:01', '0'),
-(3, 1, 2159, '2017-04-14 20:31:11', '0');
+(1, 2, 44.00, '2017-01-10 01:39:03', '1'),
+(2, 2, 86.20, '2017-03-21 01:52:01', '0');
 
 
 
