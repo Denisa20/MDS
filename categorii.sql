@@ -26,7 +26,7 @@ INSERT INTO `categorii` (`idc`, `cat`, `descriere`) VALUES
 (3, 'Carti pentru copii', 'Carti de povesti si de colorat.'),
 (4, 'Carti in limba engleza', 'Carti in limba engleza.'),
 (5, 'Dictionare', 'Dictionare.'),
-(6, 'Fictiune', 'Carti de fictiune si Young Adult.'),
+(6, 'Fictiune', 'Carti de fictiune si Young Adult.')
 ;
 
 
