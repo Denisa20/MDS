@@ -247,18 +247,13 @@ if (isset($_SESSION['valid_client'])&& $_SESSION['valid_client']!= array())  {
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--####################################################################################-->
  <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->														
 
 															<table cellpadding="0" cellspacing="4" border="0" style="width:448px; height:431px" class="product">
 
 															
 																	<td>
-																	
- <!--####################################################################################-->
  <!--##########################  Aici incepe produsul  #######################--> 
- <!--####################################################################################-->
 																		<table cellpadding="0" cellspacing="0" border="0" style="width:440px ;" >
 																		
 
@@ -549,8 +544,6 @@ if(isset($_GET['action']) && $_GET['action'] == "vezi_comanda") {
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

@@ -179,9 +179,8 @@ if (!isset($totalGeneral)) $totalGeneral = 0;
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--####################################################################################-->
- <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->														
+
+ <!--##########################  Aici incepe Afisarea produselor  #######################--> 														
 
 															<table cellpadding="0" cellspacing="4" border="0" style="width:448px; height:431px" class="product">
 
@@ -230,8 +229,6 @@ if (!isset($totalGeneral)) $totalGeneral = 0;
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

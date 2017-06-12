@@ -181,10 +181,9 @@ if (!isset($_SESSION['id'])) $_SESSION['id'] = array();
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--####################################################################################-->
+ 
  <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->														
-<?php
+ <?php
 // cate randuri sa afisezi
 $per_row = 2;
 
@@ -210,10 +209,9 @@ $total = mysqli_num_rows($resursa);
 															
 																	<td>
 																	
- <!--####################################################################################-->
+
  <!--##########################  Aici incepe produsul  #######################--> 
- <!--####################################################################################-->
-																		<table cellpadding="0" cellspacing="0" border="0" style="width:250px; height:203px" class="border">
+ 																		<table cellpadding="0" cellspacing="0" border="0" style="width:250px; height:203px" class="border">
 																			<tr>
 																				<td>
 																					<table cellpadding="0" cellspacing="0" border="0">
@@ -257,10 +255,9 @@ $total = mysqli_num_rows($resursa);
 																			</tr>
 																		</table>
 																		
- <!--####################################################################################-->
+
  <!--##########################  Aici se termina PRODUSUL  #######################--> 
- <!--####################################################################################-->																		
-																		
+ 																	
 																	</td>
 <?php
      // increase the count
@@ -299,8 +296,6 @@ $total = mysqli_num_rows($resursa);
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

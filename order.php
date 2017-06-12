@@ -329,8 +329,6 @@ for ($i=0; $i < count($_SESSION['id']); $i++)
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

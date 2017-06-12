@@ -187,9 +187,7 @@ if (isset($_POST['cuvinte']) && $_POST['cuvinte']!="") {
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--####################################################################################-->
- <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->														
+ <!--##########################  Aici incepe Afisarea produselor  #######################--> 														
 <?php
 // cate randuri sa afisezi
 $per_row = 2;
@@ -216,9 +214,7 @@ if ($total==0)  {echo "<h2>Cautarea dumneavoastra nu a returnat nici un rezultat
 															
 																	<td>
 																	
- <!--####################################################################################-->
  <!--##########################  Aici incepe produsul  #######################--> 
- <!--####################################################################################-->
 																		<table cellpadding="0" cellspacing="0" border="0" style="width:220px; height:203px" class="border">
 																			<tr>
 																				<td>
@@ -263,9 +259,7 @@ if ($total==0)  {echo "<h2>Cautarea dumneavoastra nu a returnat nici un rezultat
 																			</tr>
 																		</table>
 																		
- <!--####################################################################################-->
- <!--##########################  Aici se termina PRODUSUL  #######################--> 
- <!--####################################################################################-->																		
+<!--##########################  Aici se termina PRODUSUL  #######################--> 																		
 																		
 																	</td>
 <?php
@@ -305,8 +299,6 @@ if ($total==0)  {echo "<h2>Cautarea dumneavoastra nu a returnat nici un rezultat
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

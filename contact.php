@@ -187,10 +187,9 @@ include ("pc_base.php");
 															
 																	<td>
 																	
- <!--####################################################################################-->
+ 
  <!--##########################  Aici incepe produsul  #######################--> 
- <!--####################################################################################-->
-																		<table cellpadding="0" cellspacing="0" border="0" style="width:440px ;" >
+ 																		<table cellpadding="0" cellspacing="0" border="0" style="width:440px ;" >
 																		
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -218,9 +217,9 @@ include ("pc_base.php");
 
 </table>
 																		
- <!--####################################################################################-->
+
  <!--##########################  Aici se termina PRODUSUL  #######################--> 
- <!--####################################################################################-->																		
+																	
 																		
 																	</td>
 
@@ -249,8 +248,6 @@ include ("pc_base.php");
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 

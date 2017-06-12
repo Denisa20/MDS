@@ -178,9 +178,8 @@ $idp = $_GET['id'];
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--####################################################################################-->
  <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->														
+														
 <?php
 // cate randuri sa afisezi
 $per_row = 2;
@@ -201,9 +200,7 @@ $total = mysqli_num_rows($resursa);
 															
 																	<td>
 																	
- <!--####################################################################################-->
  <!--##########################  Aici incepe produsul  #######################--> 
- <!--####################################################################################-->
 																		<table cellpadding="0" cellspacing="0" border="0" style="width:440px ;" >
 																		
 <tr>
@@ -305,9 +302,8 @@ $total = mysqli_num_rows($resursa);
 																		
 																		</table>
 																		
- <!--####################################################################################-->
  <!--##########################  Aici se termina PRODUSUL  #######################--> 
- <!--####################################################################################-->																		
+																		
 																		
 																	</td>
 <?php
@@ -339,8 +335,6 @@ $total = mysqli_num_rows($resursa);
 		<div align="center">
 					<img src="images/z2.gif" alt=""><span>
 			<a href="index.php">Acasa</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="reduceri.php">Reduceri</a></span> <img src="images/z2.gif" alt=""><span>
-			<a href="produsenoi.php">Produse noi</a></span> <img src="images/z2.gif" alt=""><span>
 			<a href="contact.php">Contact</a></span><img src="images/z2.gif" alt=""> 
 		</div>
 
