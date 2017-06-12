@@ -1,5 +1,3 @@
--- PENTRU BAZA DE DATE
-
 <?php
 $con = mysqli_connect("localhost","root","", "baza_de_date");
 if (!$con) {
