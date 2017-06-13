@@ -1,0 +1,100 @@
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 80%;  background-image:url(images/glossymetal.jpg); 
+  background-repeat:repeat;background-color:#99FFCC ; 
+	text-align: center;	/* IE-Win hack */
+}
+h1 {font-size:24px; 
+    font-family:"Comic Sans MS";
+	color:#000;}
+
+a:link { color:#0066FF;}      /* link nevizitat */
+a:visited {color:#0066FF;}  /* link vizitat */
+a:hover { color:#0099FF;}  /* link cu mouse-over*/
+a:active {color:#0066FF;}  /* link selectat */
+
+ul {list-style: none;}
+input { width:150px;}
+textarea { width:150px;}
+table { text-align:left;}
+	
+.meniu {
+  font-family: Comic Sans MS;
+  width: 160px;
+  text-align: left;
+  }
+.meniu .sus {
+  background-image: url(images/sus.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 0;
+  font-size: 20px;
+  color: #666666;
+  }
+.meniu .ne {
+	text-align: center;
+	padding: 21px 25px 6px 25px;
+}
+.meniu .mijloc {
+  background-image: url(images/mijloc.png);
+  background-repeat: repeat-y;
+  background-position: top left;
+  margin: 0;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+  }
+.meniu .mne {
+	padding: 10px 25px;
+}
+.meniu .jos {
+  background-image: url(images/jos.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+  height: 23px;
+  }
+  
+.mare {
+  font-family: Comic Sans MS;
+  width: 500px;
+  text-align: left;
+  }
+.mare .sus {
+  background-image: url(images/sus2.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 0;
+  font-size: 20px;
+  color: #666666;
+  }
+.mare .ne {
+	text-align: center;
+	padding: 21px 25px 6px 25px;
+}
+.mare .mijloc {
+  background-image: url(images/mijloc2.png);
+  background-repeat: repeat-y;
+  background-position: top left;
+  margin: 0;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+  }
+.mare .mne {
+	padding: 10px 25px;
+}
+.mare .jos {
+  background-image: url(images/jos2.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+  height: 23px;
+  }
