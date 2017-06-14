@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 $idp = $_GET['id'];
 ?>
 
