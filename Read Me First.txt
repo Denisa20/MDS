@@ -1,0 +1,8 @@
+Pentru a rula proiectul:
+
+1. Se creeaza o baza de date locala numita baza_de_date
+2. Se face import pentru toate fisierele din folderul Baza de date
+3. Se copiaza folderul proiectului in XAMPP/htdocs
+4. Se pornesc Apache s MySql din Xampp Control Panel
+5. In orice browser se acceseaza linkul localhost/MDS
+
