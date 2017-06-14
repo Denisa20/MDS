@@ -243,7 +243,10 @@ echo '<br><br>';
 if (count($_SESSION['nume']) == 0 ){ echo '<br><h2>Nu aveti nici un produs in cosul de cumparaturi</h2>';}
 
 }
+
+
 //adaugare in tabela comanda	
+
 if (isset($_SESSION['valid_client']) && $_SESSION['valid_client']!=array()){
 	$query = "SELECT id_utilizator,username,mail FROM utilizator WHERE username = '".$_SESSION['valid_client']."'";
 	$resursa = mysqli_query($GLOBALS['con'], $query);
@@ -259,14 +262,29 @@ if ($id_comanda == $row['id_comanda']) $id_comanda=$id_comanda+1;}
 if (isset($_GET['action']) && $_GET['action']=="trimite"){
  $sql_comanda="INSERT INTO comanda (id_comanda,id_utilizator,valoare,data,onorare) VALUES ('".$id_comanda."','".$id_u."','".$totalGeneral."', NOW() ,'0')";
     $rez = mysqli_query($GLOBALS['con'], $sql_comanda);
+
+
+
+
+
 //adaugare in tabela produs_comanda
+
 for ($i=0; $i < count($_SESSION['id']); $i++)
 	{ if ($_SESSION['nr_loc_rez'][$i] != 0)
 	  { $query = "SELECT id,nume FROM produse WHERE nume = '".$_SESSION['nume'][$i]."'";
 	    $rez=mysqli_query($GLOBALS['con'], $query);
 		$row = mysqli_fetch_array($rez, MYSQLI_ASSOC);
 	    $sql_produs_comanda="INSERT INTO produs_comanda (id_comanda,id_produs,nr_produse) VALUES ('".$id_comanda."','".$row['id']."','".$_SESSION['nr_loc_rez'][$i]."')";
-    $rez = mysqli_query($GLOBALS['con'], $sql_produs_comanda);
+
+ $rez = mysqli_query($GLOBALS['con'], $sql_produs_comanda);
+	
+$sql_update_produs="UPDATE produse SET stoc=stoc-'".$_SESSION['nr_loc_rez'][$i]."' WHERE id='".$row['id']."'";
+
+   
+
+    $rez = mysqli_query($GLOBALS['con'], $sql_update_produs);
+		
+
 	 }
 	}
 	if (isset($mail_address)) { 
@@ -291,7 +309,7 @@ for ($i=0; $i < count($_SESSION['id']); $i++)
 		}
 		 $output = var_dump_to_string($_SESSION['nume']);
 		 $message = "Comanda dumneavoastra este: ".$output;
-		 echo "Mail-ul a fost trimis catre clientul cu adresa $mail_address !";    
+		
 
 	}
 	echo '<br><br><br><br><div align="center"><h2>Comanda a fost trimisa !</h2></div><br><br><br><br>';
