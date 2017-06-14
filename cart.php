@@ -173,7 +173,7 @@
 												<marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
 												   <img src="images/1_p1.jpg" border="0" width="150"><br>
 												   <img src="images/1_p2.jpg" border="0" width="150"><br>
-												   <img src="images/2_p7.jpg" border="0" width="150"><br>
+												   <img src="images/1_p3.jpg" border="0" width="150"><br>
 												</marquee>
 												</div>
 											</td>
@@ -296,12 +296,12 @@
 							</table>
 										<br><br><br>
 								<div align="center">
-									<input type="image" src="images/eng/button_update_cart.gif" border="0">
+									<input type="image" src="images/button_update_cart.gif" border="0">
 								</div>
 										<br>
 											<br>
 												<br>
-									Introduceti <b>0</b> la cantitatea produsului, pentru produsele pe care doriti sa le anulati (stergeti)!
+									Introduceti <b>0</b> la cantitatea produsului, pentru produsele pe care doriti sa le stergeti!
 												</br>
 											</br>
 										</br>
@@ -318,11 +318,11 @@
 								<table width="577">
 									<tr>
 										<td width="235" align="center"> 
-											<a href="index.php"><img src="images/eng/button_continue_shopping.gif"></a>
+											<a href="index.php"><img src="images/button_continue_shopping.gif"></a>
 												<?php
 													if (isset($_SESSION['valid_client']) && $_SESSION['valid_client']!= array())  
 													{    
-														echo "<a href=\"order.php\"><img src=\"images/eng/button_confirm_order.gif\"></a>";
+														echo "<a href=\"order.php\"><img src=\"images/button_confirm_order.gif\"></a>";
 													}
 												?>	
 										</td>
