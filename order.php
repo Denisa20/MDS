@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 
 if (!isset($totalGeneral)) $totalGeneral = 0;
 ?>
@@ -133,7 +133,7 @@ if (!isset($totalGeneral)) $totalGeneral = 0;
 <marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
    <img src="images/1_p1.jpg" border="0" width="150"><br>
    <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
+   <img src="images/1_p3.jpg" border="0" width="150"><br>
 </marquee>
 </div>
 

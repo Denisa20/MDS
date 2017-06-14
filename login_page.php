@@ -205,7 +205,7 @@ if (isset($_SESSION['valid_client'])&& $_SESSION['valid_client']!= array())  {
 <marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
    <img src="images/1_p1.jpg" border="0" width="150"><br>
    <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
+   <img src="images/1_p3.jpg" border="0" width="150"><br>
 </marquee>
 </div>
 
