@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 if (!isset($_SESSION['nume'])) $_SESSION['nume'] = array();
 if (!isset($_SESSION['nr_loc_rez'])) $_SESSION['nr_loc_rez'] = array();
 if (!isset($_SESSION['pret'])) $_SESSION['pret'] = array();
@@ -11,7 +11,7 @@ if (!isset($_SESSION['id'])) $_SESSION['id'] = array();
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Magazin online de Calculatoare ,componente si periferice</title>
+<title>Magazin online de carti</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -141,7 +141,7 @@ if (!isset($_SESSION['id'])) $_SESSION['id'] = array();
 <marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
    <img src="images/1_p1.jpg" border="0" width="150"><br>
    <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
+   <img src="images/1_p3.jpg" border="0" width="150"><br>
 </marquee>
 </div>
 
@@ -170,7 +170,7 @@ if (!isset($_SESSION['id'])) $_SESSION['id'] = array();
 														<td><img src="images/q-3.gif" alt=""><br></td>
 														<td style="width:490px">
 	<!--  Aici incepe TITLUL CATEGORIEI --> 													
-														Produse
+														Bine ati venit!
 	<!--  Aici se termina TITLUL CATEGORIEI -->											
 														</td>
 														<td><img src="images/q-4.gif" alt=""><br></td>
@@ -180,103 +180,7 @@ if (!isset($_SESSION['id'])) $_SESSION['id'] = array();
 													<tr>
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
-														<td>
- 
- <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <?php
-// cate randuri sa afisezi
-$per_row = 2;
 
-$count = 0;
-$numarate=0;
-
-$sql = "SELECT * FROM produse ORDER BY id ASC LIMIT 0,6";		
-$resursa = mysqli_query($GLOBALS['con'], $sql);
-
-$total = mysqli_num_rows($resursa); 
-
-?>
-															<table cellpadding="0" cellspacing="3" border="0" style="width:488px; height:431px" class="product">
-<?php while ($row = mysqli_fetch_array ($resursa, MYSQLI_ASSOC))
-     { 	
- $numarate+=1;
-     // if we start a line
-         if($count == 0)
-               {echo '<tr>';}
-     // display the entry - change this to i.e. display image etc
-
-?>
-															
-																	<td>
-																	
-
- <!--##########################  Aici incepe produsul  #######################--> 
- 																		<table cellpadding="0" cellspacing="0" border="0" style="width:250px; height:203px" class="border">
-																			<tr>
-																				<td>
-																					<table cellpadding="0" cellspacing="0" border="0">
-																						<tr>
-																							<td width="218" height="103" align="center"><br style="line-height:9px">
-		<!--##########################  Aici incepe imaginea #######################--> 																					
-	                       <?php 
-							print '<a href="details.php?id='.$row['id'].'">
-							<img src="products/'.$row['id'].'/1.jpg" height="86" border="0">
-							</a>';
-							?>																						
-	  <!--##########################  Aici se termina imaginea  #######################--> 																				
-																							
-																							
-																							<br></td>
-																						</tr>
-																					</table>
-																					<table cellpadding="0" cellspacing="0" border="0">
-																						<tr>
-																							<td width="21" height="45"></td>
-																							<td width="197" height="45" style="vertical-align:middle"><?php echo $row['nume']; ?></td>
-																						</tr>
-																					</table>
-																					<table cellpadding="0" cellspacing="0" border="0">
-																						<tr>
-																							<td width="101" height="53" align="center" style="vertical-align:middle"><span><?php echo $row['pret']; ?> RON</span></td>
-																							<td width="117" height="53">
-																								<a href=<?php echo "details.php?id=".$row['id']; ?> ><img src="images/button_details.gif" alt="" border="0"></a><br>
-																								<br style="line-height:1px">
-<form action="cart.php?actiune=adauga" method="POST">
-    <INPUT type="hidden" name="id" value="<?php echo $id; ?>">
-    <INPUT type="hidden" name="nume" value="<?php echo $row['nume']; ?>">
-    <input type="hidden" name="nr_loc_rez" value="<?php echo $row['nr_loc_rez']; ?>"> 
-    <input type="hidden" name="pret" value="<?php echo $row['pret']; ?>">
-	<input type="image" name="actiune" src="images/button_add_to_cart1.gif" border="0" align="top">
-</form>			
-																							</td>
-																						</tr>
-																					</table>
-																				</td>
-																			</tr>
-																		</table>
-																		
-
- <!--##########################  Aici se termina PRODUSUL  #######################--> 
- 																	
-																	</td>
-<?php
-     // increase the count
-                 $count++;
-     // if the max number per row is reached or it's the last entry
-                if(($count == $per_row) || ($numarate == ($total)))
-                 { echo '</tr>';
-     // reset the count
-                $count = 0;
-				}
-}
-?>
-
-																</tr>
-																<tr>
-																	<td colspan="3" style="height:17px "></td>
-																</tr>
-															</table>
-														</td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 													</tr>
