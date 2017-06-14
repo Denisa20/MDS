@@ -138,7 +138,7 @@ $idp = $_GET['id'];
 <marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
    <img src="images/1_p1.jpg" border="0" width="150"><br>
    <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
+   <img src="images/1_p3.jpg" border="0" width="150"><br>
 </marquee>
 </div>
 
@@ -212,24 +212,7 @@ $total = mysqli_num_rows($resursa);
  <td>  <br><br><br>
        <table border="0" cellpadding="0" cellspacing="0" align="center">
 	     <tr> 		   
-		   <td align="right">
-		   	<!--##########################  Aici incepe 2 #######################--> 																					
-	                       <?php $adresaImagine = "products/".$row['id']."/2.jpg";        
-	if (file_exists($adresaImagine)){
-							print '<a href="products/'.$row['id'].'/2.jpg" rel="thumbnail">
-							<img src="products/'.$row['id'].'/2.jpg" height="50" style="border: 1px solid #666666;">
-							</a><br>';}
-							?>																						
-	       <!--##########################  Aici se termina 2  #######################--> 		   
-		   <!--##########################  Aici incepe 3 #######################--> 																					
-	                       <?php $adresaImagine = "products/".$row['id']."/3.jpg";        
-	if (file_exists($adresaImagine)){
-							print '<a href="products/'.$row['id'].'/3.jpg" rel="thumbnail">
-							<img src="products/'.$row['id'].'/3.jpg" height="50" style="border: 1px solid #666666;">
-							</a>';}
-							?>																						
-	       <!--##########################  Aici se termina 3  #######################-->		   
-		   </td>
+		   
 		   <td align="center">
 		   	<!--##########################  Aici incepe 1 #######################--> 																					
 	                       <?php $adresaImagine = "products/".$row['id']."/1.jpg";        
@@ -240,26 +223,7 @@ $total = mysqli_num_rows($resursa);
 							?>																						
 	       <!--##########################  Aici se termina 1  #######################--> 	
 		   </td>
-		   <td align="left">
-		   	<!--##########################  Aici incepe 4 #######################--> 																					
-	                       <?php 
-						   $adresaImagine = "products/".$row['id']."/4.jpg";        
-	if (file_exists($adresaImagine)){
-							print '<a href="products/'.$row['id'].'/4.jpg" rel="thumbnail">
-							<img src="products/'.$row['id'].'/4.jpg" height="50" style="border: 1px solid #666666;">
-							</a><br>';}
-							?>																						
-	       <!--##########################  Aici se termina 4  #######################--> 		   
-		   <!--##########################  Aici incepe 5 #######################--> 																					
-	                       <?php 
-						   $adresaImagine = "products/".$row['id']."/5.jpg";        
-	if (file_exists($adresaImagine)){
-							print '<a href="products/'.$row['id'].'/5.jpg" rel="thumbnail">
-							<img src="products/'.$row['id'].'/5.jpg" height="50" style="border: 1px solid #666666;">
-							</a>';}
-							?>																						
-	       <!--##########################  Aici se termina 5  #######################-->		   
-		   </td>
+		   
 		 </tr>
 	   </table>
  </td>
@@ -267,6 +231,9 @@ $total = mysqli_num_rows($resursa);
 <tr>
    <td><br><br><br>
       <table border="0" align="center" cellspacing="5">
+<tr>
+		  <td><u>Autor:</u> <b><?php echo $row['autor']; ?> </b></td>
+		</tr>
 	    <tr>
 		  <td><u>Pret:</u> <b><?php echo $row['pret']; ?> RON</b></td>
 		</tr>
