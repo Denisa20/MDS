@@ -1,13 +1,17 @@
 <?php 
-session_start();
-include ("pc_base.php"); 
-$idc = $_GET['idc'];
+
+	session_start();
+
+	include ("baza_de_date.php"); 
+
+	$idc = $_GET['idc'];
+
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
-		<title>Magazin de componente PC si Periferice </title>
+		<title>Magazin de Carti </title>
 			<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 			<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
@@ -19,7 +23,7 @@ $idc = $_GET['idc'];
 		<td height="196">
 		
 		
-		<!-- Meniul flash -->
+		<!-- Poza antet -->
 		
 			<table cellpadding="0" cellspacing="0" border="0">
 				<tr>
@@ -31,7 +35,7 @@ $idc = $_GET['idc'];
 				</tr>
 			</table>
 			
-		<!-- Sfarsit Meniul flash -->
+		<!-- Sfarsit Poza antet -->
 		
 		
 			<table cellpadding="0" cellspacing="0" border="0" style="height:30px; background:url(images/bg_top.gif) no-repeat " class="header">
@@ -97,7 +101,8 @@ $idc = $_GET['idc'];
 										<strong>Cosul de cumparaturi</strong> &nbsp;
 											<span>(</span>
 												<a href="cart.php">
-														<?php
+														
+<?php
 															$nrRez=0;
 															$totalValoare=0;
 																for($i=0; $i<count($_SESSION['nume']); $i++)
@@ -105,9 +110,12 @@ $idc = $_GET['idc'];
 																	$nrRez=$nrRez + $_SESSION['nr_loc_rez'][$i];
 																	$totalValoare = $totalValoare + ($_SESSION['nr_loc_rez'][$i]*$_SESSION['pret'][$i]);
 																}
-														?>
+
 														
-														<?php echo $nrRez;?>
+?>
+														
+														
+<?php echo $nrRez;?>
 														</b> produse	
 												</a>
 											<span>)</span>		
@@ -149,20 +157,7 @@ $idc = $_GET['idc'];
 											
 										</tr>
 									</table>
-									<table cellpadding="0" cellspacing="0" border="0" style="height:210px; background-color:#1A1917;">
-										<tr>
-											<td>
-<div align="center" style=" margin-left:35px">
-<marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
-   <img src="images/1_p1.jpg" border="0" width="150"><br>
-   <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
-</marquee>
-</div>
-
-											</td>
-										</tr>
-									</table>
+									
 									<table cellpadding="0" cellspacing="0" border="0" style="height:31px">
 										<tr>
 											<td><img src="images/li.gif" alt=""></td>
@@ -184,8 +179,8 @@ $idc = $_GET['idc'];
 													<tr>
 														<td><img src="images/q-3.gif" alt=""><br></td>
 														<td style="width:429px">
-	<!--  Aici incepe TITLUL CATEGORIEI --> 															
-	<!--  Aici se termina TITLUL CATEGORIEI -->											
+																
+												
 														</td>
 														<td><img src="images/q-4.gif" alt=""><br></td>
 													</tr>
@@ -195,7 +190,7 @@ $idc = $_GET['idc'];
 														<td bgcolor="#BEBEBE"><img alt="" src="images/spacer.png" width="1" height="1"></td>
 														<td><img alt="" src="images/spacer.png" width="18" height="1"></td>
 														<td>
- <!--##########################  Aici incepe Afisarea produselor  #######################--> 														
+ <!-- Aici incepe Afisarea produselor  --> 														
 <?php
 // cate randuri sa afisezi
 $per_row = 2;
@@ -216,8 +211,7 @@ $total = mysqli_num_rows($resursa);
 				if($count == 0) {
 					echo '<tr>';
 				}
-     // display the entry - change this to i.e. display image etc
-	// if we start a line
+     
 ?>
 															
 		<td>													

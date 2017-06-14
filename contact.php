@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 
 ?>
 
@@ -17,7 +17,7 @@ include ("pc_base.php");
 <table cellpadding="0" cellspacing="0" border="0" style="width:717px; height:750px" align="center"> 
 	<tr>
 		<td height="196">
-		<!-- Meniul flash -->
+		<!-- Meniul poza antet -->
 			<table cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td height="263">
@@ -27,7 +27,7 @@ include ("pc_base.php");
 					</td>
 				</tr>
 			</table>
-		<!-- Sfarsit Meniul flash -->
+		<!-- Sfarsit Meniul  -->
 			<table cellpadding="0" cellspacing="0" border="0" style="height:30px; background:url(images/bg_top.gif) no-repeat " class="header">
 				<tr>
 					<td><img alt="" src="images/spacer.png" width="39" height="1"></td>

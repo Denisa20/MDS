@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 
 if (!isset($_SESSION['valid_client'])) {
 	$_SESSION['valid_client'] = array(); 
@@ -113,9 +113,7 @@ if(isset($_GET['action']) && ($_GET['action'] == "logout" || $_GET['action'] == 
 		
 					</td>
 					
-					<td><img alt="" src="images/spacer.png" width="44" height="1"></td>
-					<td><img src="images/z.gif" alt=""><br></td>
-					<td><img alt="" src="images/spacer.png" width="20" height="1"></td>
+					
 					<td>
 						<table cellpadding="0" cellspacing="0" border="0" style="width:10px">
 							<tr>

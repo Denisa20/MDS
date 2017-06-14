@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-		include ("pc_base.php"); 
+		include ("baza_de_date.php"); 
 
 			if(isset($_GET['actiune']) && $_GET['actiune'] == "adauga")
 		{
@@ -39,7 +39,7 @@
 		<td height="196">
 		
 		
-		<!-- Meniul flash -->
+		<!-- Poza antet -->
 		
 			<table cellpadding="0" cellspacing="0" border="0">
 				<tr>
@@ -51,7 +51,7 @@
 				</tr>
 			</table>
 			
-		<!-- Sfarsit Meniul flash -->
+		<!-- Sfarsit Poza antet -->
 		
 		
 			<table cellpadding="0" cellspacing="0" border="0" style="height:30px; background:url(images/bg_top.gif) no-repeat " class="header">
@@ -218,10 +218,9 @@
 												
 						
 
- <!--####################################################################################-->
- <!--##########################  Aici incepe Afisarea produselor  #######################--> 
- <!--####################################################################################-->	
-
+ 
+ <!-- Afisare produse --> 
+ 
 
 						
 	<table cellpadding="0" cellspacing="0" border="0">

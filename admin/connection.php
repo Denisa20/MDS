@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect("localhost","root","","pc_base");
+$connection = mysqli_connect("localhost","root","","baza_de_date");
 if (!$connection) {
  die ("Eroare MySQL");
 }

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include ("pc_base.php"); 
+include ("baza_de_date.php"); 
 if (!isset($_SESSION['nume'])) $_SESSION['nume'] = array();
 if (!isset($_SESSION['nr_loc_rez'])) $_SESSION['nr_loc_rez'] = array();
 if (!isset($_SESSION['pret'])) $_SESSION['pret'] = array();
