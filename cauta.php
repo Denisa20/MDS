@@ -17,7 +17,7 @@ if (isset($_POST['cuvinte']) && $_POST['cuvinte']!="") {
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Magazin online de Calculatoare ,componente si periferice</title>
+<title>Magazin online de carti</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -147,7 +147,7 @@ if (isset($_POST['cuvinte']) && $_POST['cuvinte']!="") {
 <marquee behavior="scroll" direction="up" scrolldelay="0" align="middle">
    <img src="images/1_p1.jpg" border="0" width="150"><br>
    <img src="images/1_p2.jpg" border="0" width="150"><br>
-   <img src="images/2_p7.jpg" border="0" width="150"><br>
+   <img src="images/1_p3.jpg" border="0" width="150"><br>
 </marquee>
 </div>
 
