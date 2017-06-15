@@ -351,7 +351,7 @@ if (isset($_SESSION['valid_client'])) //modificare utilizator
 	{  
 if(isset($_GET['action']) && $_GET['action'] == "modif") {
 		if($_POST['mail']=="") {echo 'Trebuie sa completati mail-ul ';exit;}
-			$sql="UPDATE `pc_base`.`utilizator` SET `nume` = '".$_POST['nume']."',
+			$sql="UPDATE `baza_de_date`.`utilizator` SET `nume` = '".$_POST['nume']."',
 				`prenume` 	= '".$_POST['prenume']."', 
 				`cnp` 		= '".$_POST['cnp']."',
 				`telefon` 	= '".$_POST['telefon']."', 
@@ -436,7 +436,7 @@ if(isset($_GET['action']) && $_GET['action'] == "change_pass_final") {
 		}
 		else 
 		{
-			$sql="UPDATE `pc_base`.`utilizator` SET `password` = md5('".$_POST['new_pass']."')
+			$sql="UPDATE `baza_de_date`.`utilizator` SET `password` = md5('".$_POST['new_pass']."')
 				WHERE `utilizator`.`id_utilizator` =".$id_utilizator." LIMIT 1 ";
 			mysqli_query($GLOBALS['con'], $sql);
 				print '<h3> Parola a fost modificata </h3>.<br><br>';

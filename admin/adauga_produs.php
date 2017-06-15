@@ -66,7 +66,7 @@ $fieldname = 'file';
 		   <a href="adauga_produs.php">Inapoi</a>';
 		   echo '</div></div><div class="jos"></div></div></div>';exit;}
 	   
-	 $sql="INSERT INTO produse (id,idc,nume,pret,detalii,stoc) VALUES ('','".$_POST['idc']."','".$_POST['nume']."','".$_POST['pret']."','".$_POST['detalii']."','".$_POST['stoc']."')";
+	 $sql="INSERT INTO produse (id,idc,nume,autor,pret,detalii,stoc) VALUES ('','".$_POST['idc']."','".$_POST['nume']."','".$_POST['autor']."','".$_POST['pret']."','".$_POST['detalii']."','".$_POST['stoc']."')";
 		mysqli_query($GLOBALS['con'], $sql);
 		print 'Produsul <b>'.$_POST['nume'].'</b> cu pretul <b>'.$_POST['pret'].'</b> RON a fost adaugata in baza de date!<br>
 		  <a href="index.php">Inapoi la meniu</a><br><a href="adauga_produs.php">Adauga un alt produs</a>';
@@ -88,6 +88,7 @@ echo '<option value="'.$row['idc'].'">'.$row['cat'].'</option>';}
 </select>
 </td></tr>
 <tr><td>Nume: </td><td><input type="text" name="nume" /></td></tr>
+<tr><td>Autor: </td><td><input type="text" name="autor" /></td></tr>
 <tr><td>Detalii: </td><td><textarea name="detalii"></textarea></td></tr>
 <tr><td>Pret: </td><td><input type="text" name="pret" /></td></tr>
 <tr><td>Stoc: </td><td><input type="text" name="stoc" /></td></tr>
